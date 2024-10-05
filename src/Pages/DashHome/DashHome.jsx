@@ -133,7 +133,7 @@ useEffect(()=>{
                                     <div className="DashHomeMainContentAccSummaryRow1BoxL">
                                         <h4>Account Balance</h4>
                                         <h3>
-                                        $ &nbsp; {accountBalance}
+                                        $ &nbsp; {userData?.accountBalance}
                                             .00
                                         </h3>
                                         <span style={{fontWeight: "700"}}> 
