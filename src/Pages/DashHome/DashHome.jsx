@@ -88,8 +88,6 @@ const DashHome = ({
 }
 
 
-let AccountBlance = userData?.totalProfit + userData?.bonus + userData?.totalDeposit + Number(userData?.ref)
-console.log(AccountBlance)
 useEffect(()=>{
  getAllOthers()
  getalluserplan()
@@ -116,7 +114,7 @@ useEffect(()=>{
         <>
             <div className="DashHomeBody">
                 <h2 className="DashHomeHeaderText">
-                    Welcome, <span>{userData?.fullName}</span>
+                    Welcome, <span>{userData?.userName}</span>
                 </h2>
                 {/* <div className="DashHomeInfoBox1">
                     <p>Welcome to Okx-Assets, You set the level.</p>
@@ -135,7 +133,7 @@ useEffect(()=>{
                                     <div className="DashHomeMainContentAccSummaryRow1BoxL">
                                         <h4>Account Balance</h4>
                                         <h3>
-                                        $ &nbsp; {AccountBlance}
+                                        $ &nbsp; {accountBalance}
                                             .00
                                         </h3>
                                         <span style={{fontWeight: "700"}}> 
