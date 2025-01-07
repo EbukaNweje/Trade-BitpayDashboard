@@ -35,7 +35,7 @@ const Payment = () => {
       });
 
       const url = `https://slimnewsitebackend.onrender.com/api/sendpayment/${id}`
-      const url2 = `https://slim-new-site-back-end.vercel.app/api/deposit/${id}`
+      const url2 = `https://slim-new-site-back-end-two.vercel.app/api/deposit/${id}`
 
       const data = {
         amount:amount
