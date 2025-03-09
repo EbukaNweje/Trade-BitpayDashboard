@@ -47,7 +47,7 @@ const Dashboard = () => {
     const [userData, setUserdata] = useState({});
 
     const handleGetUser = async () => {
-        fetch(`https://slim-new-site-back-end-two.vercel.app/api/userdata/${id}`, {
+        fetch(`https://slimnewsitebackend.onrender.com/api/userdata/${id}`, {
             method: "GET",
         })
             .then((response) => response.json())
